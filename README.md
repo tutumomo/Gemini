@@ -1,2 +1,2 @@
-"# Tomo.Project-" 
-"# Tomo.Project-" 
+"# Gemini 實作" 
+
