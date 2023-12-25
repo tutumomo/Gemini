@@ -31,3 +31,6 @@ pnpm-debug.log*
 .idea
 
 /venv
+/build
+/flagged
+*.spec
