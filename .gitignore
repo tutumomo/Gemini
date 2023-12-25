@@ -35,3 +35,4 @@ pnpm-debug.log*
 /flagged
 *.spec
 api_key.txt
+messages.json
