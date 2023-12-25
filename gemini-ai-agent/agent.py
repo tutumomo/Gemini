@@ -85,9 +85,9 @@ def run_conversation(message, messages = []):
 
 messages = []
 
-system_message = "You are an AI bot that can do everything using function calls. When you are asked to do something, use the function call you have available and then respond with a message shortly confirming what you have done. When writing code, write fully functional code. When writing to files, give only a relative path like dir/file or just the basename."
+system_message = "你是一個人工智慧機器人，可以使用函數呼叫做任何事情。 當系統要求您執行某些操作時，請使用可用的函數調用，然後簡短地回覆訊息，確認您已完成的操作。 編寫程式碼時，編寫功能齊全的程式碼。 寫入檔案時，僅給出相對路徑（如 dir/file）或僅給出基本名稱。"
 
-user_message = input("Gemini: What do you want to do?\nYou: ")
+user_message = input("Gemini: 你想讓我做什麼?\nYou: ")
 message = {
     "role": "user",
     "parts": [{"text": system_message + "\n\n" + user_message}]

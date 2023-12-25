@@ -9,16 +9,16 @@ def fix_content(text):
 
 def write_file(filename, content):
     content = fix_content(content)
-    sure = input("Do you want to write to " + filename + "? (YES/NO) ")
+    sure = input("是否寫入檔案 " + filename + "? (YES/NO) ")
     if sure == "YES":
         dirname = os.path.dirname(filename)
         if dirname and not os.path.exists(dirname):
             os.makedirs(dirname)
         with open(filename, "w") as f:
             f.write(content)
-        return {"status": "Successfully written file " + filename}
+        return {"status": "成功寫入檔案 " + filename}
     else:
-        return {"status": "ERROR: You are not allowed to write to this file"}
+        return {"status": "ERROR: 寫入錯誤"}
 
 definitions = [
     {
