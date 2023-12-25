@@ -34,3 +34,4 @@ pnpm-debug.log*
 /build
 /flagged
 *.spec
+api_key.txt
